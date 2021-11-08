@@ -1,0 +1,68 @@
+* {
+ margin: 0;
+ padding: 0;
+ font-size: 10px;
+ box-sizing: border-box;
+
+ @include breakpoint(sm) {
+  font-size: 12px;
+ }
+
+ @include breakpoint(md) {
+  font-size: 16px;
+ }
+}
+
+body {
+ background: $primaryColor;
+ height: 100vh;
+ width: 100vw;
+ font-family: $mainFont;
+}
+a {
+ text-decoration: none;
+}
+ul {
+ list-style: none;
+}
+
+h4 {
+ color: $secondaryColor;
+ font-family: $otherFont;
+ font-size: 3vw;
+ text-transform: uppercase;
+ letter-spacing: 0.5rem;
+ @include breakpoint(xl) {
+  font-size: 1vw;
+ }
+}
+
+h2 {
+ color: $darkColor;
+ font-size: 7vw;
+ font-weight: 400;
+ @include breakpoint(xl) {
+  font-size: 3.5vw;
+ }
+}
+
+section {
+ position: relative;
+ padding-top: 5%;
+ z-index: 100;
+ background: $lightColor;
+ h2 {
+  text-align: center;
+  margin-bottom: 3vh;
+ }
+ h2::after {
+  content: url("../assets/underline.svg");
+  display: block;
+  transform: translate(0rem, -2rem) scale(0.6);
+  position: relative;
+  z-index: -2;
+  @include breakpoint(md) {
+   transform: translate(0rem, -3.5rem) scale(1);
+  }
+ }
+}

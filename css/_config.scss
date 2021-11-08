@@ -1,0 +1,64 @@
+//Colors
+$primaryColor: #a8dadc;
+$secondaryColor: #457b9d;
+$lightColor: #f2fcef;
+$darkColor: #1d3557;
+$accentColor: #e63946;
+
+//Fonts
+$mainFont: "Poppins", sans-serif;
+$otherFont: "Nanum Gothic", sans-serif;
+
+//Mixins
+@mixin section-config {
+ position: relative;
+ padding-top: 5%;
+ z-index: 100;
+ background: $lightColor;
+ h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+ }
+ h2::after {
+  content: url("../assets/underline.svg");
+  display: block;
+  transform: translate(0px, -45px);
+  position: relative;
+  z-index: -2;
+ }
+}
+
+// Media queries
+$xxl: 1400px;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+
+@mixin breakpoint($point) {
+ @if $point == sm {
+  @media (min-width: 576px) {
+   @content;
+  }
+ }
+ @if $point == md {
+  @media (min-width: 768px) {
+   @content;
+  }
+ }
+ @if $point == lg {
+  @media (min-width: 992px) {
+   @content;
+  }
+ }
+ @if $point == xl {
+  @media (min-width: 1200px) {
+   @content;
+  }
+ }
+ @if $point == xxl {
+  @media (min-width: 1400px) {
+   @content;
+  }
+ }
+}

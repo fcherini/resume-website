@@ -1,1 +1,89 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+}
+
+body {
+  background: #a8dadc;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h4 {
+  color: #457b9d;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 3vw;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+@media (min-width: 1200px) {
+  h4 {
+    font-size: 1vw;
+  }
+}
+
+h2 {
+  color: #1d3557;
+  font-size: 7vw;
+  font-weight: 400;
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 3.5vw;
+  }
+}
+
+section {
+  position: relative;
+  padding-top: 5%;
+  z-index: 100;
+  background: #f2fcef;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+section h2::after {
+  content: url("../assets/underline.svg");
+  display: block;
+  -webkit-transform: translate(0rem, -2rem) scale(0.6);
+          transform: translate(0rem, -2rem) scale(0.6);
+  position: relative;
+  z-index: -2;
+}
+
+@media (min-width: 768px) {
+  section h2::after {
+    -webkit-transform: translate(0rem, -3.5rem) scale(1);
+            transform: translate(0rem, -3.5rem) scale(1);
+  }
+}
+/*# sourceMappingURL=index.css.map */
