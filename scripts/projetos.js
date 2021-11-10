@@ -24,7 +24,7 @@ const slides = [
     img: "https://res.cloudinary.com/fcherini/image/upload/v1634560882/couple-therapist_bqsbg7.png",
     title: "COUPLE'S THERAPIST SITE",
     description: "Um site para uma terapista de casal em inglês",
-    tecnologies: "HTML | CSS | BOOTSTRAP | JS PURO",
+    tecnologies: "HTML | CSS | BOOTSTRAP | VANILLA JS",
     live: "https://fcherini.github.io/couple-therapist/",
     github: "https://github.com/fcherini/couple-therapist",
     figma:
@@ -35,9 +35,9 @@ const slides = [
     img: "https://res.cloudinary.com/fcherini/image/upload/v1634560882/resume_zmdr4k.png",
     title: "SITE PESSOAL",
     description: "Site currículo para demonstrar os projetos",
-    tecnologies: "HTML | SCSS | REACT.JS",
+    tecnologies: "HTML | SCSS | VANILLA JS",
     live: "https://fernanda-cherini.netlify.app/",
-    github: "https://github.com/fcherini/Curriculo-Website",
+    github: "https://github.com/fcherini/resume-website",
     figma:
       "https://www.figma.com/file/8VsjiDxSuN8nMVDEmcjLTU/Resume-Personal-Website",
   },
