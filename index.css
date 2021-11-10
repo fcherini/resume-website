@@ -248,7 +248,7 @@ section h2::after {
 }
 
 .btn__send {
-  width: 8rem;
+  width: 10rem;
   margin-top: 1.5rem;
   padding: 0.5rem 0.75rem;
 }
@@ -319,7 +319,7 @@ section h2::after {
 }
 
 .card li {
-  padding: 0.5rem;
+  padding: 0.85rem;
 }
 
 @media (min-width: 768px) {
@@ -338,8 +338,14 @@ section h2::after {
   border-radius: 3px;
   font-size: 2rem;
   color: #f2fcef;
-  padding: 0.3rem;
+  padding: 0.5rem;
   margin-right: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .icon {
+    font-size: 1.5rem;
+  }
 }
 
 #home {
@@ -630,7 +636,7 @@ section h2::after {
 }
 
 .btn__send {
-  width: 8rem;
+  width: 10rem;
   margin-top: 1.5rem;
   padding: 0.5rem 0.75rem;
 }
@@ -701,7 +707,7 @@ section h2::after {
 }
 
 .card li {
-  padding: 0.5rem;
+  padding: 0.85rem;
 }
 
 @media (min-width: 768px) {
@@ -720,8 +726,14 @@ section h2::after {
   border-radius: 3px;
   font-size: 2rem;
   color: #f2fcef;
-  padding: 0.3rem;
+  padding: 0.5rem;
   margin-right: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .icon {
+    font-size: 1.5rem;
+  }
 }
 
 #habilidades {
@@ -933,7 +945,7 @@ section h2::after {
 }
 
 .btn__send {
-  width: 8rem;
+  width: 10rem;
   margin-top: 1.5rem;
   padding: 0.5rem 0.75rem;
 }
@@ -1004,7 +1016,7 @@ section h2::after {
 }
 
 .card li {
-  padding: 0.5rem;
+  padding: 0.85rem;
 }
 
 @media (min-width: 768px) {
@@ -1023,8 +1035,14 @@ section h2::after {
   border-radius: 3px;
   font-size: 2rem;
   color: #f2fcef;
-  padding: 0.3rem;
+  padding: 0.5rem;
   margin-right: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .icon {
+    font-size: 1.5rem;
+  }
 }
 
 #projetos {
@@ -1332,7 +1350,7 @@ section h2::after {
 }
 
 .btn__send {
-  width: 8rem;
+  width: 10rem;
   margin-top: 1.5rem;
   padding: 0.5rem 0.75rem;
 }
@@ -1403,7 +1421,7 @@ section h2::after {
 }
 
 .card li {
-  padding: 0.5rem;
+  padding: 0.85rem;
 }
 
 @media (min-width: 768px) {
@@ -1422,8 +1440,14 @@ section h2::after {
   border-radius: 3px;
   font-size: 2rem;
   color: #f2fcef;
-  padding: 0.3rem;
+  padding: 0.5rem;
   margin-right: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .icon {
+    font-size: 1.5rem;
+  }
 }
 
 #formacao {
@@ -1667,7 +1691,7 @@ section h2::after {
 }
 
 .btn__send {
-  width: 8rem;
+  width: 10rem;
   margin-top: 1.5rem;
   padding: 0.5rem 0.75rem;
 }
@@ -1738,7 +1762,7 @@ section h2::after {
 }
 
 .card li {
-  padding: 0.5rem;
+  padding: 0.85rem;
 }
 
 @media (min-width: 768px) {
@@ -1757,8 +1781,14 @@ section h2::after {
   border-radius: 3px;
   font-size: 2rem;
   color: #f2fcef;
-  padding: 0.3rem;
+  padding: 0.5rem;
   margin-right: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .icon {
+    font-size: 1.5rem;
+  }
 }
 
 #contato {
@@ -2103,7 +2133,7 @@ section h2::after {
 }
 
 .btn__send {
-  width: 8rem;
+  width: 10rem;
   margin-top: 1.5rem;
   padding: 0.5rem 0.75rem;
 }
@@ -2174,7 +2204,7 @@ section h2::after {
 }
 
 .card li {
-  padding: 0.5rem;
+  padding: 0.85rem;
 }
 
 @media (min-width: 768px) {
@@ -2193,8 +2223,14 @@ section h2::after {
   border-radius: 3px;
   font-size: 2rem;
   color: #f2fcef;
-  padding: 0.3rem;
+  padding: 0.5rem;
   margin-right: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .icon {
+    font-size: 1.5rem;
+  }
 }
 
 nav {

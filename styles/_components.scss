@@ -1,5 +1,4 @@
-@import './config';
-
+@import "./config";
 
 //Buttons
 .btn {
@@ -64,7 +63,7 @@
 }
 
 .btn__send {
- width: 8rem;
+ width: 10rem;
  margin-top: 1.5rem;
  padding: 0.5rem 0.75rem;
 }
@@ -113,7 +112,7 @@
   }
  }
  li {
-  padding: 0.5rem;
+  padding: 0.85rem;
   @include breakpoint(md) {
    padding: 0.5rem 5vw;
   }
@@ -128,6 +127,10 @@
  border-radius: 3px;
  font-size: 2rem;
  color: $lightColor;
- padding: 0.3rem;
+ padding: 0.5rem;
  margin-right: 1rem;
+
+ @include breakpoint(xl) {
+  font-size: 1.5rem;
+ }
 }
