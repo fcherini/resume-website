@@ -1,0 +1,71 @@
+@import "./config";
+@import ".//global";
+@import "./components";
+
+nav {
+ background-color: #def2e9;
+ position: fixed;
+ padding: 0 1.5rem 0 1.5rem;
+ bottom: 0rem;
+ width: 100vw;
+ height: 4rem;
+ font-size: 4rem;
+ line-height: 4rem;
+ text-align: center;
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+ align-content: center;
+ justify-content: space-between;
+ z-index: 1000;
+ a {
+  color: $secondaryColor;
+  line-height: 4rem;
+ }
+
+ .nav--active {
+  background-color: $darkColor;
+  color: $lightColor;
+  box-sizing: content-box;
+  border-radius: 0.5rem 0.5rem 0 0;
+  display: flex;
+  justify-content: center;
+  width: 3em;
+  height: 100%;
+  padding: 1rem 1rem;
+ }
+
+ .nav__icon {
+  display: block;
+  font-size: 2rem;
+ }
+ .nav__link {
+  display: none;
+ }
+}
+
+//responsive
+@include breakpoint(md) {
+ nav {
+  bottom: 1.5rem;
+  left: calc(50% - 15.5rem);
+  width: 29rem;
+  height: 2rem;
+  border-radius: 5rem;
+  height: 2rem;
+
+  .nav--active {
+   border-radius: 5rem;
+   width: 6rem;
+   align-items: center;
+   padding: 0 1rem;
+  }
+  .nav__icon {
+   display: none;
+  }
+  .nav__link {
+   display: inline-block;
+   font-size: 0.75rem;
+  }
+ }
+}
