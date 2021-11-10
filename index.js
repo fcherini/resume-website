@@ -1,4 +1,4 @@
-import "./js/navbar.js";
-import "./js/projetos.js";
-import "./js/formacao.js";
-import "./js/contato.js";
+import "./scripts/navbar.js";
+import "./scripts/projetos.js";
+import "./scripts/formacao.js";
+import "./scripts/contato.js";

@@ -48,8 +48,19 @@
 .header__img {
  flex: 20%;
  width: 70vw;
+ animation: animate 4s linear infinite;
  @include breakpoint(md) {
   width: 55vw;
+ }
+}
+
+@keyframes animate {
+ 0%,
+ 100% {
+  transform: translateY(-40px);
+ }
+ 50% {
+  transform: translateY(40px);
  }
 }
 
