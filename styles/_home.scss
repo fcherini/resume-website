@@ -3,6 +3,8 @@
 @import "./components";
 
 #home {
+ box-sizing: border-box;
+
  padding-top: 4vh;
  display: flex;
  flex-direction: column;

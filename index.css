@@ -59,10 +59,17 @@ h2 {
   }
 }
 
+header {
+  position: relative;
+  z-index: 100;
+}
+
 section {
   position: relative;
   padding-top: 5%;
   z-index: 100;
+  height: 100vh;
+  width: 100vw;
   background: #f2fcef;
 }
 
@@ -148,10 +155,17 @@ h2 {
   }
 }
 
+header {
+  position: relative;
+  z-index: 100;
+}
+
 section {
   position: relative;
   padding-top: 5%;
   z-index: 100;
+  height: 100vh;
+  width: 100vw;
   background: #f2fcef;
 }
 
@@ -319,7 +333,7 @@ section h2::after {
 }
 
 .card li {
-  padding: 0.85rem;
+  padding: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -349,6 +363,8 @@ section h2::after {
 }
 
 #home {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 4vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,10 +578,17 @@ h2 {
   }
 }
 
+header {
+  position: relative;
+  z-index: 100;
+}
+
 section {
   position: relative;
   padding-top: 5%;
   z-index: 100;
+  height: 100vh;
+  width: 100vw;
   background: #f2fcef;
 }
 
@@ -733,7 +756,7 @@ section h2::after {
 }
 
 .card li {
-  padding: 0.85rem;
+  padding: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -760,12 +783,6 @@ section h2::after {
   .icon {
     font-size: 1.5rem;
   }
-}
-
-#habilidades {
-  background-color: #f2fcef;
-  width: 100vw;
-  min-height: 100vh;
 }
 
 #habilidades .cards__container {
@@ -871,10 +888,17 @@ h2 {
   }
 }
 
+header {
+  position: relative;
+  z-index: 100;
+}
+
 section {
   position: relative;
   padding-top: 5%;
   z-index: 100;
+  height: 100vh;
+  width: 100vw;
   background: #f2fcef;
 }
 
@@ -1042,7 +1066,7 @@ section h2::after {
 }
 
 .card li {
-  padding: 0.85rem;
+  padding: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -1069,11 +1093,6 @@ section h2::after {
   .icon {
     font-size: 1.5rem;
   }
-}
-
-#projetos {
-  height: 100vh;
-  width: 100vw;
 }
 
 #projetos .project__container {
@@ -1306,10 +1325,17 @@ h2 {
   }
 }
 
+header {
+  position: relative;
+  z-index: 100;
+}
+
 section {
   position: relative;
   padding-top: 5%;
   z-index: 100;
+  height: 100vh;
+  width: 100vw;
   background: #f2fcef;
 }
 
@@ -1477,7 +1503,7 @@ section h2::after {
 }
 
 .card li {
-  padding: 0.85rem;
+  padding: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -1647,10 +1673,17 @@ h2 {
   }
 }
 
+header {
+  position: relative;
+  z-index: 100;
+}
+
 section {
   position: relative;
   padding-top: 5%;
   z-index: 100;
+  height: 100vh;
+  width: 100vw;
   background: #f2fcef;
 }
 
@@ -1818,7 +1851,7 @@ section h2::after {
 }
 
 .card li {
-  padding: 0.85rem;
+  padding: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -2089,10 +2122,17 @@ h2 {
   }
 }
 
+header {
+  position: relative;
+  z-index: 100;
+}
+
 section {
   position: relative;
   padding-top: 5%;
   z-index: 100;
+  height: 100vh;
+  width: 100vw;
   background: #f2fcef;
 }
 
@@ -2260,7 +2300,7 @@ section h2::after {
 }
 
 .card li {
-  padding: 0.85rem;
+  padding: 0.5rem;
 }
 
 @media (min-width: 768px) {
