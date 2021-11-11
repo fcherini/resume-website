@@ -141,5 +141,5 @@ const hammertime = new Hammer(container);
 //event listeners
 nextBtn.addEventListener("click", showSlide);
 prevBtn.addEventListener("click", () => showSlide("prev"));
-hammertime.on("swiperight", showSlide);
-hammertime.on("swipeleft", () => showSlide("prev"));
+hammertime.on("swipeleft", showSlide);
+hammertime.on("swiperight", () => showSlide("prev"));
