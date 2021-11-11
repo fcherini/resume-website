@@ -489,6 +489,8 @@ section h2::after {
   -ms-flex-line-pack: center;
       align-content: center;
   gap: 2vw;
+  position: relative;
+  z-index: 10000;
 }
 
 .parallax__container {
