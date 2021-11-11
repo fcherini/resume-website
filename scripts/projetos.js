@@ -3,7 +3,7 @@ const slides = [
     id: 1,
     img: "https://res.cloudinary.com/fcherini/image/upload/v1634560883/trouble-store_ozfngq.png",
     title: "TROUBLE STORE",
-    description: "Loja de roupas feita em React",
+    description: "Clothing store made in React",
     tecnologies: "HTML | SCSS | REACT.JS ",
     live: "https://trouble-store.netlify.app",
     github: "https://github.com/fcherini/trouble-store",
@@ -12,8 +12,8 @@ const slides = [
   {
     id: 2,
     img: "https://res.cloudinary.com/fcherini/image/upload/v1634560882/freshii-food_f1dsfh.png",
-    title: "FRESHII REFEIÇÕES",
-    description: "Site para refeições pré-preparadas",
+    title: "FRESHII MEALS",
+    description: "Site for pre-made meals",
     tecnologies: "HTML | CSS | JQUERY",
     live: "https://fcherini.github.io/Freshii-comida/",
     github: "https://github.com/fcherini/Freshii-comida",
@@ -23,7 +23,7 @@ const slides = [
     id: 3,
     img: "https://res.cloudinary.com/fcherini/image/upload/v1634560882/couple-therapist_bqsbg7.png",
     title: "COUPLE'S THERAPIST SITE",
-    description: "Um site para uma terapista de casal em inglês",
+    description: "Therapist Couple Website",
     tecnologies: "HTML | CSS | BOOTSTRAP | VANILLA JS",
     live: "https://fcherini.github.io/couple-therapist/",
     github: "https://github.com/fcherini/couple-therapist",
@@ -33,8 +33,8 @@ const slides = [
   {
     id: 4,
     img: "https://res.cloudinary.com/fcherini/image/upload/v1634560882/resume_zmdr4k.png",
-    title: "SITE PESSOAL",
-    description: "Site currículo para demonstrar os projetos",
+    title: "PERSONAL WEBSITE",
+    description: "Personal Website for displaying projects",
     tecnologies: "HTML | SCSS | VANILLA JS",
     live: "https://fernanda-cherini.netlify.app/",
     github: "https://github.com/fcherini/resume-website",
@@ -72,24 +72,24 @@ container.innerHTML = slides
             <div class="project__texts">
               <h5 class="project__title">${title}</h5>
               <div class="project__details">
-                <h6 class="project__subtitle">DESCRIÇão</h6>
+                <h6 class="project__subtitle">About</h6>
                 <p class="project__description" id="project__description">
                   ${description}
                 </p>
               </div>
               <div class="project__tecnologies">
-                <h6 class="project__subtitle">TECNOLOGIAS</h6>
+                <h6 class="project__subtitle">Tecnologies</h6>
                 <p class="project__description" id="project__tecnologies">
                   ${tecnologies}
                 </p>
               </div>
               <ul class="project__links">
-                <li>versão <a href="${live}" id="live" target="_blank">live</a></li>
+                <li><a href="${live}" id="live" target="_blank">live</a> version</li>
                 <li>
-                  código no <a href="${github}" id="github" target="_blank">github</a>
+                  code on <a href="${github}" id="github" target="_blank">github</a>
                 </li>
                 <li>
-                  design no <a href="${figma}" id="figma" target="_blank">figma</a>
+                  design on <a href="${figma}" id="figma" target="_blank">figma</a>
                 </li>
               </ul>
             </div>
