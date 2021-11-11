@@ -119,20 +119,26 @@ const showSlide = (type) => {
     active.classList.add(["next"]);
     last.classList.add(["active"]);
     next.classList.add(["last"]);
+    //circle indicators
+    indicators.forEach((circle) => {
+      circle.classList.remove("project__circle--active");
+      if (circle.id === last.id) {
+        circle.classList.add("project__circle--active");
+      }
+    });
   } else {
     //nextBtn functionality
     active.classList.add(["last"]);
     last.classList.add(["next"]);
     next.classList.add(["active"]);
+    //circle indicators
+    indicators.forEach((circle) => {
+      circle.classList.remove("project__circle--active");
+      if (circle.id === next.id) {
+        circle.classList.add("project__circle--active");
+      }
+    });
   }
-
-  //circle indicators
-  indicators.forEach((circle) => {
-    circle.classList.remove("project__circle--active");
-    if (circle.id === next.id) {
-      circle.classList.add("project__circle--active");
-    }
-  });
 };
 
 //swipe library
