@@ -108,6 +108,7 @@ const showSlide = (type) => {
   if (!next) {
     next = container.firstElementChild;
   }
+  
 
   //remove classes
   active.classList.remove(["active"]);
