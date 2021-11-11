@@ -43,69 +43,103 @@ const slides = [
   },
 ];
 
-//select items
-const img = document.querySelector(".project__img");
-const title = document.querySelector(".project__title");
-const description = document.getElementById("project__description");
-const tecnologies = document.getElementById("project__tecnologies");
-const live = document.getElementById("live");
-const github = document.getElementById("github");
-const figma = document.getElementById("figma");
-
+//select elements
+const container = document.querySelector(".project__container");
 const prevBtn = document.querySelector(".prev__btn");
 const nextBtn = document.querySelector(".next__btn");
-
 const indicators = document.querySelectorAll(".project__circle");
 
-// set starting item
-let currentItem = 0;
+//add items from slides to the container
+container.innerHTML = slides
+  .map((slide, slideIndex) => {
+    const { id, img, title, description, tecnologies, live, github, figma } =
+      slide;
 
-//load initial item
-window.addEventListener("DOMContentLoaded", () => {
-  let item = slides[currentItem];
-  img.src = item.img;
-  title.textContent = item.title;
-  description.textContent = item.description;
-  tecnologies.textContent = item.tecnologies;
-  live.href = item.live;
-  github.href = item.github;
-  figma.href = item.figma;
-  console.log(img);
-});
+    //change class based on position
+    let position = "next";
+    if (slideIndex === 0) {
+      position = "active";
+    }
+    if (slideIndex === slides.length - 1) {
+      position = "last";
+    }
+    return `<div class="slide ${position}" id="${id}">
+            <img
+              src="${img}"
+              alt="${title}"
+              class="project__img"
+            />
+            <div class="project__texts">
+              <h5 class="project__title">${title}</h5>
+              <div class="project__details">
+                <h6 class="project__subtitle">DESCRIÇão</h6>
+                <p class="project__description" id="project__description">
+                  ${description}
+                </p>
+              </div>
+              <div class="project__tecnologies">
+                <h6 class="project__subtitle">TECNOLOGIAS</h6>
+                <p class="project__description" id="project__tecnologies">
+                  ${tecnologies}
+                </p>
+              </div>
+              <ul class="project__links">
+                <li>versão <a href="${live}" id="live" target="_blank">live</a></li>
+                <li>
+                  código no <a href="${github}" id="github" target="_blank">github</a>
+                </li>
+                <li>
+                  design no <a href="${figma}" id="figma" target="_blank">figma</a>
+                </li>
+              </ul>
+            </div>
+          </div>`;
+  })
+  .join("");
 
-//show slide based on item and change indicator
-function showSlide(slide) {
-  const item = slides[slide];
-  img.src = item.img;
-  title.textContent = item.title;
-  description.textContent = item.description;
-  tecnologies.textContent = item.tecnologies;
-  live.href = item.live;
-  github.href = item.github;
-  figma.href = item.figma;
+//slide functionality
+const showSlide = (type) => {
+  //select elements
+  const active = document.querySelector(".active");
+  const last = document.querySelector(".last");
+  let next = active.nextElementSibling;
 
+  //back to first slide
+  if (!next) {
+    next = container.firstElementChild;
+  }
+
+  //remove classes
+  active.classList.remove(["active"]);
+  last.classList.remove(["last"]);
+  next.classList.remove(["next"]);
+
+  if (type === "prev") {
+    //prevBtn functionality
+    active.classList.add(["next"]);
+    last.classList.add(["active"]);
+    next.classList.add(["last"]);
+  } else {
+    //nextBtn functionality
+    active.classList.add(["last"]);
+    last.classList.add(["next"]);
+    next.classList.add(["active"]);
+  }
+
+  //circle indicators
   indicators.forEach((circle) => {
     circle.classList.remove("project__circle--active");
-    if (circle.id == item.id) {
+    if (circle.id === next.id) {
       circle.classList.add("project__circle--active");
     }
   });
-}
+};
 
-//show next slide
-nextBtn.addEventListener("click", () => {
-  currentItem++;
-  if (currentItem > slides.length - 1) {
-    currentItem = 0;
-  }
-  showSlide(currentItem);
-});
+//swipe library
+const hammertime = new Hammer(container);
 
-//show previous slide
-prevBtn.addEventListener("click", () => {
-  currentItem--;
-  if (currentItem < 0) {
-    currentItem = slides.length - 1;
-  }
-  showSlide(currentItem);
-});
+//event listeners
+nextBtn.addEventListener("click", showSlide);
+prevBtn.addEventListener("click", () => showSlide("prev"));
+hammertime.on("swiperight", showSlide);
+hammertime.on("swipeleft", () => showSlide("prev"));
