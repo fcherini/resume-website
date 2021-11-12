@@ -72,24 +72,24 @@ container.innerHTML = slides
             <div class="project__texts">
               <h5 class="project__title">${title}</h5>
               <div class="project__details">
-                <h6 class="project__subtitle">About</h6>
+                <h6 class="project__subtitle">Sobre</h6>
                 <p class="project__description" id="project__description">
                   ${description}
                 </p>
               </div>
               <div class="project__tecnologies">
-                <h6 class="project__subtitle">Tecnologies</h6>
+                <h6 class="project__subtitle">Tecnologias</h6>
                 <p class="project__description" id="project__tecnologies">
                   ${tecnologies}
                 </p>
               </div>
               <ul class="project__links">
-                <li><a href="${live}" id="live" target="_blank">live</a> version</li>
+                <li>versão <a href="${live}" id="live" target="_blank">live</a></li>
                 <li>
-                  code on <a href="${github}" id="github" target="_blank">github</a>
+                  código no <a href="${github}" id="github" target="_blank">github</a>
                 </li>
                 <li>
-                  design on <a href="${figma}" id="figma" target="_blank">figma</a>
+                  design no <a href="${figma}" id="figma" target="_blank">figma</a>
                 </li>
               </ul>
             </div>
@@ -108,7 +108,6 @@ const showSlide = (type) => {
   if (!next) {
     next = container.firstElementChild;
   }
-  
 
   //remove classes
   active.classList.remove(["active"]);
