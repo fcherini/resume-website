@@ -52,7 +52,12 @@
         ><span class="nav__link">contato</span></a
       >
     </nav>
-
+    <a
+      href="assets/fernanda cherini - curriculo.pdf"
+      target="_blank"
+      class="btn btn--secondary btn__top"
+      >currículo</a
+    >
     <div class="container">
       <!----------------------
         ---------Home---------
@@ -60,9 +65,9 @@
       <header id="home" data-scroll-section>
         <div class="header__wrapper">
           <div class="text__wrapper">
-            <h4>fae cherini</h4>
+            <h4>fernanda cherini</h4>
             <h2 data-scroll data-scroll-speed="-2">
-              Beautiful, modern, and responsive sites
+              Sites bonitos, modernos, e responsivos
             </h2>
           </div>
           <img
@@ -72,9 +77,13 @@
           />
         </div>
         <div class="btn__group" data-scroll data-scroll-speed="-4">
-          <a href="#projetos" class="btn btn--accent"> projects </a>
-          <a href="#contato" target="_blank" class="btn btn--secondary">
-            contact
+          <a href="#projetos" class="btn btn--accent"> projetos </a>
+          <a
+            href="./assets/Fernanda Cherini - Curriculo.pdf"
+            target="_blank"
+            class="btn btn--secondary"
+          >
+            currículo
           </a>
         </div>
 
@@ -93,7 +102,7 @@
         ------Habilidades-----
         ---------------------->
       <section id="habilidades" data-scroll-section>
-        <h2>Skills</h2>
+        <h2>Habilidades</h2>
         <div class="cards__container">
           <!-- first card -->
           <div class="card">
@@ -110,7 +119,7 @@
           </div>
           <!-- second card -->
           <div class="card">
-            <h3>OTHERS</h3>
+            <h3>OUTROS</h3>
             <ul>
               <li><i class="fas fa-briefcase icon"></i> agile</li>
               <li><i class="devicon-git-plain icon"></i> git</li>
@@ -118,6 +127,7 @@
               <li><i class="devicon-figma-plain icon"></i> figma</li>
               <li><i class="devicon-photoshop-plain icon"></i> photoshop</li>
               <li><i class="devicon-xd-plain icon"></i> adobe xd</li>
+              <li><i class="fas fa-flag-usa icon"></i> inglês</li>
             </ul>
           </div>
         </div>
@@ -126,7 +136,7 @@
         -------Projetos-------
         ---------------------->
       <section id="projetos" data-scroll-section>
-        <h2 data-scroll>Projects</h2>
+        <h2 data-scroll>Projetos</h2>
         <div class="project__container"></div>
         <div class="project__controls">
           <i class="fas fa-chevron-left prev__btn"></i>
@@ -142,13 +152,13 @@
         -------Formacao-------
         ---------------------->
       <section id="formacao" data-scroll-section>
-        <h2 data-scroll>Qualifications</h2>
+        <h2 data-scroll>Formação</h2>
         <div class="qualification__content">
           <!-- qualification content 1 -->
           <div class="qualification__data">
             <div class="qualification__text" id="1">
               <div class="qualification__title" id="1">WEB <br />DESIGNER</div>
-              <div class="qualification__type" id="1">Certificate</div>
+              <div class="qualification__type" id="1">Curso Técnico MEC</div>
               <div class="qualification__place" id="1">CPET</div>
               <div class="qualification__year" id="1">2021 - Atual</div>
             </div>
@@ -169,9 +179,9 @@
             </div>
             <div class="qualification__text" id="2">
               <div class="qualification__title" id="2">
-                REACT.JS <br />COURSE
+                REACT.JS <br />CURSO
               </div>
-              <div class="qualification__type" id="2">Course</div>
+              <div class="qualification__type" id="2">Curso</div>
               <div class="qualification__place" id="2">UDEMY</div>
               <div class="qualification__year" id="2">2021</div>
             </div>
@@ -180,9 +190,9 @@
           <div class="qualification__data">
             <div class="qualification__text" id="3">
               <div class="qualification__title" id="3">
-                JAVASCRIPT <br />COURSE
+                JAVASCRIPT <br />CURSO
               </div>
-              <div class="qualification__type" id="3">Course</div>
+              <div class="qualification__type" id="3">Curso</div>
               <div class="qualification__place" id="3">UDEMY</div>
               <div class="qualification__year" id="3">2021</div>
             </div>
@@ -200,7 +210,7 @@
             </div>
             <div class="qualification__text" id="4">
               <div class="qualification__title" id="4">WEB <br />DEVELOPER</div>
-              <div class="qualification__type" id="4">Course</div>
+              <div class="qualification__type" id="4">Curso</div>
               <div class="qualification__place" id="4">UDEMY</div>
               <div class="qualification__year" id="4">2021</div>
             </div>
@@ -211,7 +221,7 @@
               <div class="qualification__title" id="5">
                 FULLSTACK WEB<br />DEVELOPMENT
               </div>
-              <div class="qualification__type" id="5">Course</div>
+              <div class="qualification__type" id="5">Curso</div>
               <div class="qualification__place" id="5">UDEMY</div>
               <div class="qualification__year" id="5">2021 - Atual</div>
             </div>
@@ -225,7 +235,7 @@
         --------Contato-------
         ---------------------->
       <section id="contato" data-scroll-section>
-        <h2 data-scroll>Contact</h2>
+        <h2 data-scroll>Contato</h2>
         <div id="submit__message"></div>
         <div class="contact__container">
           <form
@@ -233,11 +243,11 @@
             method="POST"
             id="contact__form"
           >
-            <label for="name">Name</label>
+            <label for="name">Nome</label>
             <input type="text" name="name" id="name" />
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email" />
-            <label for="message">Message</label>
+            <label for="message">Mensagem</label>
             <textarea
               name="message"
               id="message"
@@ -245,7 +255,7 @@
               rows="10"
             ></textarea>
             <button type="submit" class="btn btn--accent btn__send">
-              send
+              enviar
             </button>
           </form>
         </div>
