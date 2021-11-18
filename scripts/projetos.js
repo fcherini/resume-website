@@ -7,7 +7,8 @@ const slides = [
     tecnologies: "HTML | SCSS | REACT.JS ",
     live: "https://trouble-store.netlify.app",
     github: "https://github.com/fcherini/trouble-store",
-    figma: "https://www.figma.com/file/ELfYwYS3K754i4AsOcwwi0/Trouble-store",
+    figma:
+      "https://www.figma.com/file/ELfYwYS3K754i4AsOcwwi0/Trouble-store?node-id=275%3A5379",
   },
   {
     id: 2,
@@ -89,7 +90,7 @@ container.innerHTML = slides
                   código no <a href="${github}" id="github" target="_blank">github</a>
                 </li>
                 <li>
-                  design no <a href="${figma}" id="figma" target="_blank">figma</a>
+                  estudo de caso no <a href="${figma}" id="figma" target="_blank">figma</a>
                 </li>
               </ul>
             </div>

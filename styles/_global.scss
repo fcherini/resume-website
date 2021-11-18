@@ -26,6 +26,7 @@ ul {
  list-style: none;
 }
 
+h3,
 h4 {
  color: $secondaryColor;
  font-family: $otherFont;
@@ -34,6 +35,14 @@ h4 {
  letter-spacing: 0.5rem;
  @include breakpoint(xl) {
   font-size: 1vw;
+ }
+}
+
+h3 {
+ font-size: 4vw;
+ padding-bottom: 1vh;
+ @include breakpoint(xl) {
+  font-size: 2vw;
  }
 }
 
